@@ -11,6 +11,7 @@ These add-ons for PlayMaker provide actions you can use in your PlayMaker state 
  * GazeSelection: Casts a ray from the headset into the world. Sends events when ever a new GameObject is viewed.
  * ShowSpatialMappingRenderer: Controls the [SpatialMappingRenderer](https://docs.unity3d.com/ScriptReference/VR.WSA.SpatialMappingRenderer.html).
  
+ 
  ## Examples
  
   * AirTap: Demonstrates how to respond to an AirTap. This exmaple adds a RigidBody to any GameObject being gazed at while air-tapping.
