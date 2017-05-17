@@ -1,3 +1,15 @@
+# PlayMaker
+/Assets/net.fabrejean*
+/Assets/PlayMaker/
+/Assets/PlayMaker.meta
+/Assets/Plugins/PlayMaker/
+/Assets/Plugins/PlayMaker.meta
+/Assets/Gizmos/PlayMaker*
+
+/Assets/WSATestCertificate.pfx*
+
+/UWP/
+/App/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
