@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Mixed Reality Add-ons for PlayMaker
 
-You can use the [editor on GitHub](https://github.com/johnsietsma/PlayerMakerWindowsMixedReality/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+These add-ons for PlayMaker provide actions you can use in your PlayMaker state machines to use the HoloLens (and other Mixed Reality headsets) within Unity.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Supported Actions
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/johnsietsma/PlayerMakerWindowsMixedReality/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ * AttachOrLoadWorldAnchor: Loads a [WorldAnchor](https://docs.unity3d.com/ScriptReference/VR.WSA.WorldAnchor.html) from the [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/VR.WSA.Persistence.WorldAnchorStore.html) or attaches and saves a new WorldAnchor.
+ * RemoveWorldAnchor: Removes a [WorldAnchor](https://docs.unity3d.com/ScriptReference/VR.WSA.WorldAnchor.html) from the [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/VR.WSA.Persistence.WorldAnchorStore.html).
+ * CheckForHoloLensGesture: This state waits till it detects a gesture from the [GestureRecognizer](https://docs.unity3d.com/ScriptReference/VR.WSA.Input.GestureRecognizer.html) and then fires a PlayMaker event to respond to the event.
+ * CheckForHoloLensVoiceCommand: This state waits till it detects a voice command from the [KeywordRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer.html) and then fires a PlayMaker event to respond to the event.
+ * GazeSelection: Casts a ray from the headset into the world. Sends events when ever a new GameObject is viewed.
+ * ShowSpatialMappingRenderer: Controls the [SpatialMappingRenderer](https://docs.unity3d.com/ScriptReference/VR.WSA.SpatialMappingRenderer.html]
+ 
+ ## Examples
+ 
+  * AirTap: Demonstrates how to respond to an AirTap. This exmaple adds a RigidBody to any GameObject being gazed at while air-tapping.
+  * GazeCursor: Demonstrates how to implement a cursor that follows the gaze.
+  * SpatialRendering: Demonstrates how to hide and show the spatial renderer. Use an air-tap to toggle visibility.
+  * VoiceCommands: Demonstrates how to implement voice commands. Say "Make Physical" make all GameObject props non-kinematic and "Reset World" to reset their positions and make them kinematic again.
+  
