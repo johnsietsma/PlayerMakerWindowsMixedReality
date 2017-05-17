@@ -265,7 +265,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CheckForHoloLensGesture
+        - HutongGames.PlayMaker.Actions.CheckForGesture
         customNames:
         - 
         actionEnabled: 01
@@ -498,7 +498,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CheckForHoloLensGesture
+        - HutongGames.PlayMaker.Actions.CheckForGesture
         customNames:
         - 
         actionEnabled: 01

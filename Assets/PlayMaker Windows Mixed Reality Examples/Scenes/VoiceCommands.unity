@@ -332,7 +332,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CheckForHoloLensVoiceCommand
+        - HutongGames.PlayMaker.Actions.CheckForVoiceCommand
         customNames:
         - 
         actionEnabled: 01
@@ -395,8 +395,8 @@ MonoBehaviour:
           intValues: 
           boolValues: 
           stringValues:
-          - Reset World
           - Make Physical
+          - Reset World
           vector4Values: []
           objectReferences: []
         fsmEnumParams: []
@@ -409,7 +409,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
+        - PhraseRecognized
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []

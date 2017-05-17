@@ -251,7 +251,7 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GameObjectIsNull
-        - HutongGames.PlayMaker.Actions.CheckForHoloLensGesture
+        - HutongGames.PlayMaker.Actions.CheckForGesture
         customNames:
         - 
         - 
