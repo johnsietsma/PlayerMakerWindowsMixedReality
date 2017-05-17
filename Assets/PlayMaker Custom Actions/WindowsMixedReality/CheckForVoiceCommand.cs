@@ -4,8 +4,8 @@ using UnityEngine.Windows.Speech;
 namespace HutongGames.PlayMaker.Actions
 {
     [ActionCategory("HoloLens")]
-    [Tooltip("Check for a HoloLens Voice Command")]
-    public class CheckForHoloLensVoiceCommand : FsmStateAction
+    [Tooltip("Check for a Windows Voice Command")]
+    public class CheckForVoiceCommand : FsmStateAction
     {
         public FsmEventTarget eventTarget;
 

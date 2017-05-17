@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 642574840}
   - component: {fileID: 642574839}
   m_Layer: 0
-  m_Name: Voice Control
+  m_Name: Voice Commands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

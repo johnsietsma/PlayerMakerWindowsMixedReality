@@ -4,8 +4,8 @@ using UnityEngine.VR.WSA.Input;
 namespace HutongGames.PlayMaker.Actions
 {
     [ActionCategory("HoloLens")]
-    [Tooltip("Check for a HoloLens Gesture")]
-    public class CheckForHoloLensGesture : FsmStateAction
+    [Tooltip("Check for a Windows Gesture")]
+    public class CheckForGesture : FsmStateAction
     {
         public FsmEventTarget eventTarget;
 

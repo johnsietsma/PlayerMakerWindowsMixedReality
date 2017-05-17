@@ -5,8 +5,8 @@ using UnityEngine.VR.WSA.Persistence;
 namespace HutongGames.PlayMaker.Actions
 {
     [ActionCategory("HoloLens")]
-    [Tooltip("Add a world anchor to the World Anchor Store")]
-    public class AttachWorldAnchor : FsmStateAction
+    [Tooltip("Add or load a world anchor to the World Anchor Store")]
+    public class AttachorLoadWorldAnchor : FsmStateAction
     {
         [RequiredField]
         [Tooltip("The GameObject to attach the anchor to")]
