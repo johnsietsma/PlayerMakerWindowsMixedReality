@@ -9,7 +9,7 @@ These add-ons for PlayMaker provide actions you can use in your PlayMaker state 
  * CheckForHoloLensGesture: This state waits till it detects a gesture from the [GestureRecognizer](https://docs.unity3d.com/ScriptReference/VR.WSA.Input.GestureRecognizer.html) and then fires a PlayMaker event to respond to the event.
  * CheckForHoloLensVoiceCommand: This state waits till it detects a voice command from the [KeywordRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer.html) and then fires a PlayMaker event to respond to the event.
  * GazeSelection: Casts a ray from the headset into the world. Sends events when ever a new GameObject is viewed.
- * ShowSpatialMappingRenderer: Controls the [SpatialMappingRenderer](https://docs.unity3d.com/ScriptReference/VR.WSA.SpatialMappingRenderer.html]
+ * ShowSpatialMappingRenderer: Controls the [SpatialMappingRenderer](https://docs.unity3d.com/ScriptReference/VR.WSA.SpatialMappingRenderer.html).
  
  ## Examples
  
