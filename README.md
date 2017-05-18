@@ -5,6 +5,15 @@ Create HoloLens applications without coding. These add-ons for PlayMaker provide
 
 [PlayMaker]("https://www.assetstore.unity3d.com/en/#!/content/368") is required and must be purchased seperately.
 
+## Getting Started
+
+If you're new to [PlayMaker, try the tutorials section](http://www.hutonggames.com/index.html).
+
+Download the [PlayMaker Windows Mixed Reality Unity Package](https://github.com/johnsietsma/PlayerMakerWindowsMixedReality/releases/download/0.1/PlayerMakerWindowsMixedReality.unitypackage), double-click or drag it into your Unity project to import the action and examples.
+
+Open up some of the example scenes and either run them using [HoloGraphic Emulation with Unity](https://docs.unity3d.com/Manual/windowsholographic-emulation.html) or build and deploy to the device.
+
+Check out the available actions below and start creating :)
 
 ## Actions
 
