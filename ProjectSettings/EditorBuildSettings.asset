@@ -5,6 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/PlayMaker Windows Mixed Reality Examples/Scenes/AirTap.unity
     guid: 37217ef6171687340a673018d9b71b0a
+  - enabled: 0
+    path: Assets/PlayMaker Windows Mixed Reality Examples/Scenes/GazeCursor.unity
+    guid: fe611e1127a6df14bb19fbe655462e52
+  - enabled: 0
+    path: Assets/PlayMaker Windows Mixed Reality Examples/Scenes/SpatialRendering.unity
+    guid: 76a4c3b1a82dc4b449385e56a3753887
+  - enabled: 1
+    path: Assets/PlayMaker Windows Mixed Reality Examples/Scenes/VoiceCommands.unity
+    guid: 5792632f347a0f949bb333d29749dc7b

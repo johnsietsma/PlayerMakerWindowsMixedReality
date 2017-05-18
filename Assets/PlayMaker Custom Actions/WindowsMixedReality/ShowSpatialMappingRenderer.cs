@@ -1,3 +1,4 @@
+using HutongGames.PlayMaker;
 using UnityEngine;
 using UnityEngine.VR.WSA;
 
@@ -11,11 +12,17 @@ namespace HutongGames.PlayMaker.Actions
         [Tooltip("The GameObject that has or should have the Spatial Mapping Renderer")]
         public FsmOwnerDefault worldSpatialMappingObject;
 
-        public FsmBool showOcclusion;
-        public FsmBool showVisualisation;
+        [ObjectType(typeof(SpatialMappingRenderer.RenderState))]
+        public FsmEnum renderState;
+
 		public FsmMaterial occlusionMaterial;
+
 		public FsmMaterial visualMaterial;
+
         public FsmBool freezeUpdates;
+
+        [ObjectType(typeof(SpatialMappingRenderer.LODType))]
+        public FsmEnum levelOfDetail;
 
         public override void OnEnter()
         {
@@ -26,28 +33,20 @@ namespace HutongGames.PlayMaker.Actions
                 spatialMappingRenderer = this.Owner.AddComponent<SpatialMappingRenderer>();
             }
 
-            spatialMappingRenderer.enabled = showOcclusion.Value | showVisualisation.Value;
+            var renderStateValue = (SpatialMappingRenderer.RenderState)renderState.Value;
+            spatialMappingRenderer.enabled = renderStateValue != SpatialMappingRenderer.RenderState.None;
 
-            if( spatialMappingRenderer.enabled ) {
-                if( showOcclusion.Value ) {
-                    spatialMappingRenderer.renderState = SpatialMappingRenderer.RenderState.Occlusion;
-                }
-                else if( showVisualisation.Value ) {
-                    spatialMappingRenderer.renderState = SpatialMappingRenderer.RenderState.Visualization;
-                }
-
-                spatialMappingRenderer.occlusionMaterial = occlusionMaterial.Value;
-                spatialMappingRenderer.visualMaterial = visualMaterial.Value;
-                spatialMappingRenderer.freezeUpdates = freezeUpdates.Value;
-            }
-
+            spatialMappingRenderer.renderState = renderStateValue;
+            spatialMappingRenderer.occlusionMaterial = occlusionMaterial.Value;
+            spatialMappingRenderer.visualMaterial = visualMaterial.Value;
+            spatialMappingRenderer.freezeUpdates = freezeUpdates.Value;
+            spatialMappingRenderer.lodType = (SpatialMappingBase.LODType)levelOfDetail.Value;
             Finish();
         }
 
         public override void Reset()
         {
-            showOcclusion = true;
-            showVisualisation = false;
+            renderState.Value = SpatialMappingRenderer.RenderState.None;
             occlusionMaterial = null;
             visualMaterial = null;
             freezeUpdates = false;
