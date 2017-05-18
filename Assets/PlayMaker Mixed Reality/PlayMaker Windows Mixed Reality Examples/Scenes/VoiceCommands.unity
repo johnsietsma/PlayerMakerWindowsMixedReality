@@ -509,7 +509,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Make Phsyical
+          value: Make Physical
         - useVariable: 1
           name: Voice Command
           tooltip: 
