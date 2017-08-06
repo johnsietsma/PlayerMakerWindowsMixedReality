@@ -1,10 +1,13 @@
 # PlayMaker
 /Assets/net.fabrejean*
-/Assets/PlayMaker/
+/Assets/PlayMaker/*
 /Assets/PlayMaker.meta
-/Assets/Plugins/PlayMaker/
+/Assets/Plugins/PlayMaker/*
 /Assets/Plugins/PlayMaker.meta
 /Assets/Gizmos/PlayMaker*
+
+# Include PlayMaker globals
+!/Assets/PlayMaker/Resources/
 
 /Assets/WSATestCertificate.pfx*
 
