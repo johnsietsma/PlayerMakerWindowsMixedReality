@@ -6,9 +6,6 @@
 /Assets/Plugins/PlayMaker.meta
 /Assets/Gizmos/PlayMaker*
 
-# Include PlayMaker globals
-!/Assets/PlayMaker/Resources/
-
 /Assets/WSATestCertificate.pfx*
 
 /UWP/
