@@ -11,6 +11,8 @@ If you're new to [PlayMaker, try the tutorials section](http://www.hutonggames.c
 
 Download the [PlayMaker Windows Mixed Reality Unity Package](https://github.com/johnsietsma/PlayerMakerWindowsMixedReality/releases/download/0.1/PlayerMakerWindowsMixedReality.unitypackage), double-click or drag it into your Unity project to import the action and examples.
 
+Import the globals from the Mixed Reality package by clicking on the PlayMaker->Tools->Import Package menu items. Then select PlayMakerGlobals.unitypackage from the the PlayMakerMixedReality folder.
+
 Open up some of the example scenes and either run them using [HoloGraphic Emulation with Unity](https://docs.unity3d.com/Manual/windowsholographic-emulation.html) or build and deploy to the device.
 
 Check out the available actions below and start creating :)

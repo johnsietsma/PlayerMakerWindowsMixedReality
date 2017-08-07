@@ -12,13 +12,7 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables:
-    - useVariable: 1
-      name: test
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
+    floatVariables: []
     intVariables: []
     boolVariables: []
     stringVariables: []
@@ -41,7 +35,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 00000000
   events:
   - AirTapOccured
   - HoloLens AirTap
