@@ -7,6 +7,8 @@
 /Assets/Gizmos/PlayMaker*
 
 /Assets/WSATestCertificate.pfx*
+/Assets/Gizmos.meta
+/Assets/Plugins.meta
 
 /UWP/
 /App/
